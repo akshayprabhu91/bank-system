@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Open New Account</title>
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="refresh"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h3>Create a new checking account</h3>
+            <p>
+                Please enter your social security number: <br></br>
+                <h:inputText id = "ssn" value = "#{createNewAccount.ssn}" />                
+            </p>
+            <p>
+                How much you want to deposit? <br></br>
+                <h:inputText id = "balance" value = "#{createNewAccount.balance}" />
+            </p>
+            <p>
+                <h:commandButton id = "submit" value = "Submit" action = "confirmation1.xhtml"/>
+            </p>
+        </h:form>
+    </h:body>
+</html>
